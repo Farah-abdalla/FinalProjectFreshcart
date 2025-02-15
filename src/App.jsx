@@ -21,12 +21,13 @@ import  { Toaster } from 'react-hot-toast';
 import WishList from './Components/WishList/WishList';
 import WishlistcontextProvider from './Context/WishlistContext';
 import SubProductDetails from './Components/SubProductDetails/SubProductDetails';
-import CategoryDetails from './Components/categoryDetails/categoryDetails';
+
 import SubCategories from './Components/SubCategories/SubCategories';
 import ForgetPassword from './Components/ForgetPassword/ForgetPassword';
 import ResetCode from './Components/ResetCode/ResetCode';
 import Checkout from './Components/Checkout/Checkout';
 import AllOrders from './Components/AllOrders/AllOrders';
+import CategoryDetails from './Components/CategoryDetails/CategoryDetails';
 
 
 function App() {
