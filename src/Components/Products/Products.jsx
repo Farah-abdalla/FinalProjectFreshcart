@@ -128,9 +128,9 @@ export default function Products() {
 </div>:null}
   </div>
  </form> */}
-   <div className=' row'>
+   <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6'>
    {products.length>0?products.map((product)=>(
- <div className="w-1/5 p-3 shadow shadow-gray-500/40 md:shadow-gray-500/40 m-7" key={product.id}>
+ <div className=" p-3 shadow shadow-gray-500/40 md:shadow-gray-500/40 m-7" key={product.id}>
   
   
   <Link to={`/subproductdetails/${product.id}`} >

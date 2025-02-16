@@ -42,10 +42,10 @@ export default function Categories() {
   return (
    
    <>
-   {loading==false?<><div className=' row '>
+   {loading==false?<><div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6'>
     {category.length>0?category.map((category)=>(
   
-  <div className="w-1/4 p-3 shadow shadow-gray-500/40 hover:shadow-emerald-700 m-10 hover:scale-110 transform-gpu" key={category._id}>
+  <div className=" p-3 shadow shadow-gray-500/40 hover:shadow-emerald-700 m-10 hover:scale-110 transform-gpu" key={category._id}>
    
    <button to={`/categories`} onClick={()=>{
     getAllSpecificonCategory(category._id)
@@ -63,14 +63,14 @@ export default function Categories() {
     </div>
   
 
- <div className='row'>
+ <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6'>
        
    
        {AllSubcategory.map((AllSubcategory)=>(
     
     
        
-     <div className="w-1/4 p-3 shadow shadow-gray-500/40 hover:shadow-emerald-700 m-10 hover:scale-110 transform-gpu " key={AllSubcategory._id}>
+     <div className=" p-3 shadow shadow-gray-500/40 hover:shadow-emerald-700 m-10 hover:scale-110 transform-gpu " key={AllSubcategory._id}>
             
        
             <h2 className=' text-emerald-600 text-3xl'>{AllSubcategory.name}</h2>

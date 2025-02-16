@@ -7,33 +7,21 @@
     @apply flex flex-wrap py-5 px-3
 }
 
-
-
 .loader {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: block;
-    margin: 25px auto;
-    position: relative;
-    background-color: #047857; /* إضافة لون للخلفية */
-    box-sizing: border-box;
-    animation: animloader 1s linear infinite alternate;
-    color:#047857;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #34d399;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px; 
+  animation: spin 2s linear infinite; 
+  margin: auto; 
+  display: block; 
   
 }
 
-@keyframes animloader {
-    0% {
-        box-shadow: -38px -12px, -14px 0, 14px 0, 38px 0;
-    }
-    33% {
-        box-shadow: -38px 0px, -14px -12px, 14px 0, 38px 0;
-    }
-    66% {
-        box-shadow: -38px 0px, -14px 0, 14px -12px, 38px 0;
-    }
-    100% {
-        box-shadow: -38px 0, -14px 0, 14px 0, 38px -12px;
-    }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
+
+

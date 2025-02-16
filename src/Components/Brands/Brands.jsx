@@ -3,6 +3,7 @@ import axios  from 'axios';
 import { useState } from 'react';
 
 
+
 export default function Brands() {
   
     const [brands, setbrands] = useState([])
@@ -38,7 +39,7 @@ export default function Brands() {
 
 
 </div>
-) ):<span className="loader left-[90%]"></span>}
+) ):<div className="loader "></div>}
 </div> 
 
 
