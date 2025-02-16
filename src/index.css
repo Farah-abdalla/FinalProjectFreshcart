@@ -14,12 +14,13 @@
     height: 12px;
     border-radius: 50%;
     display: block;
-    margin: 15px auto;
+    margin: 25px auto;
     position: relative;
     background-color: #047857; /* إضافة لون للخلفية */
     box-sizing: border-box;
     animation: animloader 1s linear infinite alternate;
     color:#047857;
+  
 }
 
 @keyframes animloader {

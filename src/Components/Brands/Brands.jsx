@@ -25,9 +25,9 @@ export default function Brands() {
     <>
       <h2 className='text-emerald-600 font-bold text-5xl text-center m-4'>All Brands</h2>
 
-<div className=' row '>
+<div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 '>
 {brands.length>0?brands.map((brands)=>(
-<div className="w-1/4 p-3 shadow shadow-gray-500/40 hover:shadow-emerald-700 m-10 hover:scale-110 transform-gpu" key={brands._id}>
+<div className=" p-5 shadow shadow-gray-500/40 hover:shadow-emerald-700 m-10 hover:scale-110 transform-gpu" key={brands._id}>
 
 
 
@@ -38,7 +38,7 @@ export default function Brands() {
 
 
 </div>
-) ):<span className="loader "></span>}
+) ):<span className="loader left-[90%]"></span>}
 </div> 
 
 
